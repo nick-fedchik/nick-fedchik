@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://go.dev/"><img src="https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go"/></a>
   <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Linux-Kernel%20%26%20Systems-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/></a>
-  <a href="https://github.com/nick-fedchik/articles/tree/main/ExpertSystem"><img src="https://img.shields.io/badge/Research-Expert%20Systems%20for%20R%26D-7952B3?style=flat-square&logo=gitbook&logoColor=white" alt="Expert Systems"/></a>
+  <a href="https://dou.ua/users/nikolajfedchik/articles/"><img src="https://img.shields.io/badge/Research-Expert%20Systems%20for%20R%26D-7952B3?style=flat-square&logo=gitbook&logoColor=white" alt="Expert Systems"/></a>
   <a href="https://dou.ua/users/nikolajfedchik/articles/"><img src="https://img.shields.io/badge/DOU-Articles%20(UA)-E41B23?style=flat-square" alt="DOU Articles"/></a>
   <a href="https://docker.com"><img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></a>
   <a href="https://about.gitlab.com/"><img src="https://img.shields.io/badge/GitLab-DevOps%20%26%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab"/></a>
@@ -27,60 +27,66 @@ I design and build **deterministic, evidence-backed reasoning systems** in Go �
 
 ---
 
-### 📚 Featured Research: [Expert Systems for R&D](https://github.com/nick-fedchik/articles/tree/main/ExpertSystem)
+### 📚 Engineering Monographs
 
-Author of a comprehensive 23-part Ukrainian engineering series: **«Експертні системи для R&D: від хаосу до керованих знань»** ([Repository](https://github.com/nick-fedchik/articles)). The series formalizes how to transform heterogeneous engineering artifacts into verifiable knowledge across five mission-critical domains (*Automotive, Aerospace, Medicine, Defense, Law*).
+#### 1. Architecture of Evidence-Based Expert Systems: From Formal Ontologies to Neuro-Symbolic AI
+*Comprehensive Monograph · 7 parts, 40 chapters, 5 appendices (2026)*
+
+A foundational study on overcoming the central crisis of modern AI: the **epistemic breach** between the stochastic plausibility of autoregressive neural networks (LLM/SLM) and the deterministic truth of formal logical proofs. Formulates the paradigm of **Evidence-Grounded Neuro-Symbolic AI (Third-Wave NeSy)** — statistical models act in an advisory capacity (System 1) for hypothesis generation and semantic parsing, while a deterministic symbolic core (System 2) strictly enforces formal invariants, byte-exact grounding, and fail-closed safety envelopes.
+
+* **Evidence-Grounded Invariant (EGI)**: Continuous byte-exact custody `[byte_start, byte_end]`, cryptographic SHA-256 hashes, and W3C PROV-O provenance, guaranteeing zero hallucination ($`\mathrm{ZHR} = 1.00`$) and fail-closed refusal precision ($`\mathrm{FCP} = 100\%`$).
+* **High-Performance Knowledge Packs (`mmap`)**: POSIX `mmap` dual-layer binary storage (canonical evidence bedrock + materialized graph index) for zero-allocation, sub-linear engine startup regardless of ontology volume.
+* **Knowledge Testing Pyramid (KTP)**: 4-tier verification (KUT unit mocks, KIT rule lattices, KVT variational tests) ensuring semantic invariance ($`\mathrm{SIS} \ge 0.98`$) and Lipschitz continuity ($`L_{\mathcal{K}} \le L_{\max}`$) to eliminate relay chattering.
+* **Popperian Falsification & ASPIC+**: Active Compliance Auditor synthesizing counter-examples, conflict resolution under Dung/Walton argumentation frameworks, and runtime Falsification Gates withstanding *Undermining*, *Undercutting*, and *Rebutting* attacks.
+* **Formal Safety Cases (GSN)**: Direct compilation of Engineering Knowledge Graphs (EKG) into Goal Structuring Notation trees for simultaneous functional safety and cybersecurity compliance (ISO 26262 ASIL-D, IEC 61508 SIL-3, DO-178C DAL-A, ISO/SAE 21434).
+* **Hardware Execution (EPU)**: Real-time silicon knowledge processors benchmarked on NVIDIA Jetson AGX Orin (64GB) + dual Xilinx Zynq-7020 FPGAs over Zero-Copy federated arenas, ensuring deterministic sub-microsecond inference.
+
+*Structure: Part I (Epistemic Foundations) · Part II (Mathematical Models) · Part III (Knowledge Extraction & NLP) · Part IV (Core Architecture & Inference) · Part V (Verification & Safety Cases) · Part VI (Neuro-Symbolic Frontiers) · Part VII (Distributed Cybernetic Runtime).*
+
+---
+
+#### 2. Managing Complex Engineering Projects and Programmes
+*From Work Breakdown Structure to Digital Thread and Evidence-Based Release · 6 parts, 18 chapters, 3 appendices*
+
+Systems engineering guide on hybrid planning for HW/SW co-design, baseline management, digital thread traceability connecting requirements, code, tests, and evidence, event-driven governance, and AI-assisted PMO platforms.
+
+---
+
+#### 3. The Evolution of Cybersecurity: From the First Modem to Autonomous Systems
+*Popular-Science Monograph · 10 chapters, 2 appendices*
+
+Traces architectural zero trust from 1970s time-sharing systems to telecommunications, ICS/SCADA, connected vehicles, UAV swarms, and space assets.
+
+---
+
+#### 4. Military Cybernetics of the Early 21st Century
+*Control Systems, Cyber-Physical Complexes and Evidence-Based Intelligence · 4 parts, 12 chapters*
+
+Theoretical foundations and modern applications of the Ukrainian cybernetic school (Glushkov tradition), GNSS-denied navigation, autonomous swarm robotics, multi-echelon C2 architectures, and hardware roots of trust (based strictly on open-source research).
+
+---
+
+### 🔬 Engineering Research Series: Expert Systems for R&D
+
+An ongoing technical research series (over 75,000 words across 13 published works and active milestones) establishing the full engineering lifecycle of evidence-grounded expert systems in R&D:
 
 ```mermaid
 flowchart LR
-    L1["01–10: Foundation<br/>Applied Math & Architecture"] --> L2["11–15.5: Applied ML<br/>Semantic Parsing & KBs"]
-    L2 --> L3["16–19: Operational KE<br/>Explanation & Verification"]
-    L3 --> L4["20–22: Cyber-Physical<br/>Diagnostics & Edge-to-C2"]
+    L1["01–03: Framing<br/>Evidence & Corporate Memory"] --> L2["04–08: Foundations<br/>Applied Math, Stack & Topology"]
+    L2 --> L3["09–11: Knowledge as Data<br/>Artifacts, Ingestion & KB Types"]
+    L3 --> L4["12–13+: Verification & Skepticism<br/>Continual Learning, Popper & ASPIC+"]
 ```
 
-#### Four Pillars of the Series:
-1. **Engineering Foundations (01–10)**: Bayesian evolution to evidence AI, enterprise memory, applied discrete math, knowledge pipelines, and treating engineering artifacts as structured data.
-2. **Applied ML & Knowledge Engineering (11–15 & 15.5)**: Comparing rules, frames, ontologies, and Case-Based Reasoning (CBR); semantic query compilation; linguistic analysis and overcoming syntax variability vs. determinism.
-3. **Operational Knowledge Engineering (16–19)**: Counterfactual and contrastive explanation engines, knowledge elicitation from human experts, safe transition from recommendation to automated action, and rigorous KB verification.
-4. **Diagnostics & Cybernetics (20–22)**: Multi-hypothesis diagnostic trees (symptoms vs. causes), continual learning without self-referential bias, and edge-to-backend cybernetics across autonomous and tactical systems.
+#### Four Architectural Pillars:
 
-<details>
-<summary><b>📖 Click to explore the complete catalog of articles (01–23)</b></summary>
-
-<br/>
-
-| # | Article Title | Focus Area |
-|---|---|---|
-| **01** | [Експертні системи для R&D: від хаосу до керованих знань](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/01-Expert-Systems-for-RD.md) · [DOU](https://dou.ua/forums/topic/59793/) | Introduction to R&D Knowledge Systems |
-| **02** | [Від теореми Байєса до доказових рішень ШІ](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/02-Expert-Systems-Evolution-Evidence-UA.md) · [DOU](https://dou.ua/forums/topic/59861/) | Probabilistic & Evidence Evolution |
-| **03** | [Експертна система, доказова рекомендація ШІ і корпоративна пам'ять](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/03-Expert-System-And-Evidence-Memory-UA.md) · [DOU](https://dou.ua/forums/topic/59923/) | Enterprise Knowledge Triad |
-| **04** | [Прикладна математика експертних систем](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/04-Expert-Systems-Applied-Mathematics-UA.md) · [DOU](https://dou.ua/forums/topic/60032/) | Rules, Graphs, Causality & Decision Logic |
-| **05** | [Крок від математичного методу до обрання технологій](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/05-Expert-Systems-Implementation-Stack-UA.md) · [DOU](https://dou.ua/forums/topic/60155/) | Implementation Stack & Tech Choices |
-| **06** | [Архітектура експертної системи: від знання до доказового рішення](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/06-Expert-Systems-Architecture-UA.md) · [DOU](https://dou.ua/forums/topic/60293/) | System Architecture & Contracts |
-| **07** | [Інфраструктура виконання експертної системи](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/07-Expert-Systems-Infrastructure-UA.md) · [DOU](https://dou.ua/forums/topic/60373/) | Hardware, Deployment & Execution Topology |
-| **08** | [Експертна система це більше, ніж інформаційно-довідкова система](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/08-Expert-Systems-Beyond-Reference-UA.md) · [DOU](https://dou.ua/forums/topic/60530/) | Reference vs. Inference Engines |
-| **09** | [Артефакти інженерії як дані експертної системи](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/09-Engineering-Artifacts-As-Data-UA.md) · [DOU](https://dou.ua/forums/topic/60678/) | Code, Git, Commits & Specs as Facts |
-| **10** | [Здобуття знань: збирання інженерних знань без хаосу і витоку](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/10-Knowledge-Acquisition-System-UA.md) · [DOU](https://dou.ua/forums/topic/60842/) | Controlled Knowledge Ingestion Pipelines |
-| **11** | [Типи баз знань: правила, фрейми, онтології та прецеденти (CBR)](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/11-Knowledge-Base-Types-UA.md) · [DOU](https://dou.ua/forums/topic/60963/) | Knowledge Representation Paradigms |
-| **12** | [Як навчати експертну систему: знання, іспит і перевірка змін](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/12-How-Expert-Systems-Learn-UA.md) · [DOU](https://dou.ua/forums/topic/61034/) | Regression Testing & System Learning |
-| **13** | [Знайти замало: від людського запитання до доказової відповіді](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/13-Knowledge-Acquisition-From-Question-To-Evidence-UA.md) | Question Parsing & Proof Formulation |
-| **14** | [Філософія для інженера: що машина має право називати знанням](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/14-Philosophy-For-Expert-Systems-UA.md) | Epistemology of Machine Knowledge |
-| **15** | [Як експертна система розуміє текст і не втрачає джерело відповіді](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/15-Linguistic-Analysis-And-Local-Models-UA.md) | NLP, Local Models & Citation Tracking |
-| **15.5** | [Варіативність мови проти детермінізму експертної системи](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/23-language-variability-vs-expert-system-determinism.md) | Semantic Parsing vs. Naive Vector RAG |
-| **16** | [Як експертна система пояснює рішення, відмову й можливість змін](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/16-Expert-System-Explanation-Engine-UA.md) | Contrastive & Counterfactual Explanations |
-| **17** | [Як перетворити досвід експерта на перевірюване знання](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/17-Knowledge-Elicitation-From-Experts-UA.md) | Expert Knowledge Elicitation Protocols |
-| **18** | [Коли експертній системі можна діяти: від рекомендації до дії](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/18-Expert-System-From-Recommendation-To-Action-UA.md) | Controlled Action Execution & Guardrails |
-| **19** | [Як перевірити, чи можна довіряти правилам експертної системи](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/19-Expert-System-Knowledge-Base-Verification-UA.md) | Verification, Invariants & Soundness |
-| **20** | [Діагностика: як не сплутати симптом із причиною](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/20-Expert-System-Diagnosis-UA.md) | Root-Cause Analysis & Diagnostic Trees |
-| **21** | [Як експертна система вчиться на досвіді й не повторює помилок](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/21-Expert-System-Continual-Learning-UA.md) | Continual Learning & Log Debiasing |
-| **22** | [Кібернетика XXI століття: від датчика до центру керування](https://github.com/nick-fedchik/articles/blob/main/ExpertSystem/22-Cybernetics-Expert-Systems-Edge-Backend-UA.md) | Cyber-Physical, Robotics & C2 Systems |
-
-</details>
-
-#### Additional Writing Series:
-* **[Military Cybernetics & MilTech](https://github.com/nick-fedchik/articles/tree/main/MilTech)**: Analysis of the Ukrainian military cybernetics heritage (Glushkov tradition), UAS swarms, Air Defense (ППО), Electronic Warfare (РЕБ), and Signal Intelligence (РЕР).
-* **[Information Security](https://github.com/nick-fedchik/articles/tree/main/Inform_Security)**: Architectural evolution of cybersecurity, defense-in-depth, and formal guarantees.
-* **[R&D & Program Engineering](https://github.com/nick-fedchik/articles/tree/main/Project_Management)**: *Release Evidence as an Engineering Discipline*, WBS decomposition challenges in HW/SW co-design, and project governance in the AI era.
+1. **Pillar I. Framing & Epistemic Boundaries (Articles 01–03)**  
+   *The R&D Manifest and the Triad of Trust.* Overcoming the stochastic drift of LLMs; formalizing the epistemic boundary between conversational chatbots, evidence-based recommendations, and immutable corporate memory; tracing probabilistic evolution from Bayes' theorem to verifiable inference.
+2. **Pillar II. Applied Mathematics & System Infrastructure (Articles 04–08)**  
+   *From Mathematical Models to Execution Topologies.* Concrete formalisms for production engineering: production rules, causal DAGs (Pearl), Markov processes, Case-Based Reasoning (CBR); implementation tech stack selection; reference system architecture; physical compute sizing across CPU, GPU, and NPU architectures under SWaP constraints; defining the strict boundary between search/retrieval systems and expert inference engines.
+3. **Pillar III. Knowledge as Structured Engineering Data (Articles 09–11)**  
+   *Ingestion, Slicing, and Formal Representation.* Transforming engineering artifacts (code, Git history, specifications, regulatory standards) into structured data; automated knowledge acquisition pipelines with strict confidentiality and leak-prevention controls; comparative evaluation of knowledge base topologies (rules, frames, ontologies, cases) under Open vs. Closed World Assumptions.
+4. **Pillar IV. Continual Learning & Algorithmic Skepticism (Articles 12–13+)**  
+   *Verification, Falsification, and Non-Regressive Adaptation.* The knowledge lifecycle, structured expert review, examination batteries, and fail-closed regression checks; Popperian falsification and the architectural *Falsification Gate*; defending against confirmation bias via structured attacks (*Undermining, Undercutting, Rebutting*) under the ASPIC+ argumentation framework.
 
 ---
 
@@ -127,16 +133,19 @@ flowchart LR
 13. **[Як навчати експертну систему: знання, іспит і перевірка змін](https://dou.ua/forums/topic/61034/)**  
     Знання в експертній системі старіють разом із вимогами та тестами. Кероване проведення змін: фаховий перегляд (expert review), іспит на еталонному наборі з перевіркою правильних відмов (fail-closed) та калібрування впевненості системи.
 
+14. **Поппер проти ШІ: як навчити систему спростовувати саму себе до того, як це зробить продакшен** *(готується до публікації)*  
+    Чому наївна автоматизація та патерн LLM-as-a-Judge створюють оманливу ілюзію безпеки. Як побудувати захисний Falsification Gate на засадах попперівського фальсифікаціонізму та оскаржуваних міркувань ASPIC+: розбір трьох класів атак (Undermining, Undercutting, Rebutting) та детермінований Fail-Closed інваріант.
+
 ---
 
-### 🛠️ Featured Open Source Projects
+### 🛠️ Featured Open Source & Engineering Projects
 
 * 🚀 **[codex-fleet](https://github.com/nick-fedchik/codex-fleet)** — *Lightweight distributed runner for multi-host Ollama worker clusters (Go).*<br/>
   Orchestrates parallel local LLM/embedding inference across distributed nodes with health monitoring, automated failover, SSH checks, and worker warmups.
 * 🧰 **[gltk](https://github.com/nick-fedchik/gltk)** — *GitLab Automation & Administration Toolkit (Go).*<br/>
   High-performance CLI built on Cobra for GitLab management: runner orchestrations, CI artifact pipelines, user lifecycle management, and security audits.
-* 📐 **[articles](https://github.com/nick-fedchik/articles)** — *Monograph-grade articles on expert systems, cybernetics, and engineering discipline.*<br/>
-  Featuring LaTeX/MathJax formulas, Mermaid architectural schematics, and automated Markdown/KaTeX verification pipelines.
+* 📐 **Research & Publication Corpus** — *Monograph-grade engineering research on expert systems, cybernetics, and mission-critical systems engineering.*<br/>
+  Mathematical formalisms (KaTeX/MathJax), Mermaid architectural schematics, and automated Markdown verification pipelines.
 
 ---
 
