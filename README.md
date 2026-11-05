@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Nick Fedchik 👋</h1>
+<h1 align="center">Hi, I'm Mykola Fedchyk 👋</h1>
 
 <p align="center">
   <b>Go Engineer & Systems Architect</b> — Specializing in deterministic reasoning, expert systems, and verifiable engineering pipelines.
