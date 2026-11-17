@@ -58,21 +58,7 @@ A hands-on engineering textbook bridging formal logic, applied mathematics, and 
 
 ---
 
-#### 3. Managing Complex Engineering Projects and Programmes
-*From Work Breakdown Structure to Digital Thread and Evidence-Based Release · 6 parts, 18 chapters, 3 appendices*
-
-Systems engineering guide on hybrid planning for HW/SW co-design, baseline management, digital thread traceability connecting requirements, code, tests, and evidence, event-driven governance, and AI-assisted PMO platforms.
-
----
-
-#### 4. The Evolution of Cybersecurity: From the First Modem to Autonomous Systems
-*Popular-Science Monograph · 10 chapters, 2 appendices*
-
-Traces architectural zero trust from 1970s time-sharing systems to telecommunications, ICS/SCADA, connected vehicles, UAV swarms, and space assets.
-
----
-
-#### 5. [Military Cybernetics of the Early 21st Century](https://github.com/nick-fedchik/articles/tree/main/MilTech)
+#### 3. [Military Cybernetics of the Early 21st Century](https://github.com/nick-fedchik/articles/tree/main/MilTech)
 *Control Systems, Cyber-Physical Complexes and Evidence-Based Intelligence · 4 parts, 12 chapters*
 
 Theoretical foundations and modern applications of the Ukrainian cybernetic school (Glushkov tradition), GNSS-denied navigation, autonomous swarm robotics, multi-echelon C2 architectures, and hardware roots of trust (based strictly on open-source research).
@@ -81,13 +67,13 @@ Theoretical foundations and modern applications of the Ukrainian cybernetic scho
 
 ### 🔬 Engineering Research Series: Expert Systems for R&D
 
-An ongoing technical research series (over 75,000 words across 13 published works and active milestones) establishing the full engineering lifecycle of evidence-grounded expert systems in R&D:
+An ongoing technical research series (15 published articles on DOU.ua) establishing the full engineering lifecycle of evidence-grounded expert systems in R&D:
 
 ```mermaid
 flowchart LR
     L1["01–03: Framing<br/>Evidence & Corporate Memory"] --> L2["04–08: Foundations<br/>Applied Math, Stack & Topology"]
     L2 --> L3["09–11: Knowledge as Data<br/>Artifacts, Ingestion & KB Types"]
-    L3 --> L4["12–13+: Verification & Skepticism<br/>Continual Learning, Popper & ASPIC+"]
+    L3 --> L4["12–15: Verification, Skepticism & TypeSafe AI<br/>Continual Learning, Popper, ASPIC+ & Schemas"]
 ```
 
 #### Four Architectural Pillars:
@@ -98,14 +84,14 @@ flowchart LR
    *From Mathematical Models to Execution Topologies.* Concrete formalisms for production engineering: production rules, causal DAGs (Pearl), Markov processes, Case-Based Reasoning (CBR); implementation tech stack selection; reference system architecture; physical compute sizing across CPU, GPU, and NPU architectures under SWaP constraints; defining the strict boundary between search/retrieval systems and expert inference engines.
 3. **Pillar III. Knowledge as Structured Engineering Data (Articles 09–11)**  
    *Ingestion, Slicing, and Formal Representation.* Transforming engineering artifacts (code, Git history, specifications, regulatory standards) into structured data; automated knowledge acquisition pipelines with strict confidentiality and leak-prevention controls; comparative evaluation of knowledge base topologies (rules, frames, ontologies, cases) under Open vs. Closed World Assumptions.
-4. **Pillar IV. Continual Learning & Algorithmic Skepticism (Articles 12–13+)**  
-   *Verification, Falsification, and Non-Regressive Adaptation.* The knowledge lifecycle, structured expert review, examination batteries, and fail-closed regression checks; Popperian falsification and the architectural *Falsification Gate*; defending against confirmation bias via structured attacks (*Undermining, Undercutting, Rebutting*) under the ASPIC+ argumentation framework.
+4. **Pillar IV. Continual Learning, Algorithmic Skepticism & TypeSafe AI (Articles 12–15)**  
+   *Verification, Falsification, and Schema-Constrained Boundaries.* The knowledge lifecycle, structured expert review, examination batteries, and fail-closed regression checks; Popperian falsification and the architectural *Falsification Gate* under ASPIC+ (*Undermining, Undercutting, Rebutting*); and why grammar/schema-constrained JSON generation (*TypeSafe AI*) guarantees syntactic validity without proving domain truth unless paired with a deterministic expert system.
 
 ---
 
 ### 📝 Статті на [DOU.ua](https://dou.ua/users/nikolajfedchik/articles/)
 
-Цикл інженерних статей та прикладних досліджень, опублікованих у технічному розділі [DOU.ua](https://dou.ua/users/nikolajfedchik/articles/), присвячених архітектурі доказових експертних систем, управлінню знаннями та практичному ШІ в R&D:
+Цикл із 15 інженерних статей та прикладних досліджень, опублікованих у технічному розділі [DOU.ua](https://dou.ua/users/nikolajfedchik/articles/), присвячених архітектурі доказових експертних систем, управлінню знаннями та практичному ШІ в R&D:
 
 1. **[Експертні системи для R&D: від корпоративного хаосу до керованих знань](https://dou.ua/forums/topic/59793/)**  
    У зрілих інженерних компаніях знання часто розпорошені між кодом, Jira, Wiki та головами експертів. Через це гальмує онбординг, а старі помилки повторюються. Аналіз того, як сучасні експертні системи для R&D зшивають цей хаос у єдину пам’ять організації і чому це значно більше за звичайний чат-бот.
@@ -146,19 +132,26 @@ flowchart LR
 13. **[Як навчати експертну систему: знання, іспит і перевірка змін](https://dou.ua/forums/topic/61034/)**  
     Знання в експертній системі старіють разом із вимогами та тестами. Кероване проведення змін: фаховий перегляд (expert review), іспит на еталонному наборі з перевіркою правильних відмов (fail-closed) та калібрування впевненості системи.
 
-14. **Поппер проти ШІ: як навчити систему спростовувати саму себе до того, як це зробить продакшен** *(готується до публікації)*  
-    Чому наївна автоматизація та патерн LLM-as-a-Judge створюють оманливу ілюзію безпеки. Як побудувати захисний Falsification Gate на засадах попперівського фальсифікаціонізму та оскаржуваних міркувань ASPIC+: розбір трьох класів атак (Undermining, Undercutting, Rebutting) та детермінований Fail-Closed інваріант.
+14. **[Поппер проти ШІ: як навчити систему спростовувати саму себе до того, як це зробить продакшен](https://dou.ua/forums/topic/62793/)**  
+    Зелені тести й «Confidence 0.99» від ШІ не захищають прод від чорних лебедів. Як навчити систему алгоритмічного скептицизму, застосувати критерій Поппера й теорію ASPIC+, щоб софт шукав контрприклади проти власних дій ще до деплою (розбір трьох класів атак: Undermining, Undercutting, Rebutting та Fail-Closed інваріанта).
+
+15. **[Коли нейромережі заборонили писати текст: TypeSafe AI проти експертних систем](https://dou.ua/forums/topic/62808/)**  
+    Що, якби ШІ замість генерації тексту одразу повертав готові типізовані рішення? Розбір технології TypeSafe AI (GBNF/JSON-схеми), чому синтаксично валідний JSON ще не гарантує правильності інженерних рішень і як поєднання граматично обмежених нейромереж з експертними системами підвищує надійність критичних сервісів.
 
 ---
 
 ### 🛠️ Featured Open Source & Engineering Projects
 
-* 🚀 **[codex-fleet](https://github.com/nick-fedchik/codex-fleet)** — *Lightweight distributed runner for multi-host Ollama worker clusters (Go).*<br/>
-  Orchestrates parallel local LLM/embedding inference across distributed nodes with health monitoring, automated failover, SSH checks, and worker warmups.
+* 🔬 **[LogicTracer](https://github.com/nick-fedchik/LogicTracer)** — *Evidence-grade Logic Analyzer for Hardware-in-the-Loop (HIL) & AI Agents (C++20 / Qt 6 / RP2040 / Verilog).*<br/>
+  Native host (`logictracer-cli`, `logictracer-gui`), Model Context Protocol server (`logictracer-mcp`), RP2040 firmware, and in-design FPGA capture core (`lt_capture`) delivering deterministic stimulus-to-reaction timing metrology (`Δs` histograms, nearest-rank percentiles, ±1-sample bounds, and automated CI/HIL pass/fail verdicts).
+* 📚 **[articles](https://github.com/nick-fedchik/articles)** — *Engineering Monographs & University Textbooks on Expert Systems and Military Cybernetics.*<br/>
+  Open repository hosting the 40-chapter monograph *Architecture of Evidence-Based Expert Systems*, the 3-volume university textbook *Expert Systems* (30 chapters with executable verification listings), and *Military Cybernetics of the Early 21st Century* (12 chapters).
+* 🚀 **[codex-fleet](https://github.com/nick-fedchik/codex-fleet)** — *Lightweight distributed worker fleet for local LLM orchestration (Go).*<br/>
+  Orchestrates parallel local Ollama model inference and embeddings across Linux, Windows, and WSL2 hosts with health monitoring, automated failover, SSH checks, and worker warmups.
 * 🧰 **[gltk](https://github.com/nick-fedchik/gltk)** — *GitLab Automation & Administration Toolkit (Go).*<br/>
   High-performance CLI built on Cobra for GitLab management: runner orchestrations, CI artifact pipelines, user lifecycle management, and security audits.
-* 📐 **Research & Publication Corpus** — *Monograph-grade engineering research on expert systems, cybernetics, and mission-critical systems engineering.*<br/>
-  Mathematical formalisms (KaTeX/MathJax), Mermaid architectural schematics, and automated Markdown verification pipelines.
+* 🛡️ **[aorus-5-fault-watchdog](https://github.com/nick-fedchik/aorus-5-fault-watchdog)** — *Linux Kernel & Hardware Fault Watchdog (C).*<br/>
+  System daemon for detecting, logging, and recovering from low-level NVIDIA GSP firmware and Intel xHCI controller faults on Linux hosts.
 
 ---
 
