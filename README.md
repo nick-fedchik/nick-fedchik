@@ -5,9 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://go.dev/"><img src="https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go"/></a>
+  <a href="https://go.dev/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go"/></a>
+  <a href="https://github.com/Z3Prover/z3"><img src="https://img.shields.io/badge/SMT-Z3%20Formal%20Verification-2E7D32?style=flat-square" alt="Z3 SMT"/></a>
   <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Linux-Kernel%20%26%20Systems-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/></a>
-  <a href="https://dou.ua/users/nikolajfedchik/articles/"><img src="https://img.shields.io/badge/Research-Expert%20Systems%20for%20R%26D-7952B3?style=flat-square&logo=gitbook&logoColor=white" alt="Expert Systems"/></a>
+  <a href="https://github.com/nick-fedchik/articles"><img src="https://img.shields.io/badge/Books-Expert%20Systems%20%26%20Cybernetics-7952B3?style=flat-square&logo=gitbook&logoColor=white" alt="Books & Monographs"/></a>
   <a href="https://dou.ua/users/nikolajfedchik/articles/"><img src="https://img.shields.io/badge/DOU-Articles%20(UA)-E41B23?style=flat-square" alt="DOU Articles"/></a>
   <a href="https://docker.com"><img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/></a>
   <a href="https://about.gitlab.com/"><img src="https://img.shields.io/badge/GitLab-DevOps%20%26%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab"/></a>
@@ -21,45 +22,57 @@
 I design and build **deterministic, evidence-backed reasoning systems** in Go — systems engineered for mission-critical R&D, compliance, and engineering domains where stochastic drift and hallucinations are unacceptable.
 
 * **Determinism over Stochastic Guessing**: Replacing naive dense retrieval (RAG) and loose generative loops with semantic compilation, formal ontologies, and verified inference rules.
-* **Byte-Exact Evidence Grounding**: Reasoning outputs grounded in immutable source bytes with auditable execution traces and citations.
-* **Fail-Closed Refusals**: Explicit, typed refusals when evidence is insufficient or contradictory, adhering strictly to the closed-world assumption.
-* **Production Go Engineering**: Clean package architecture, high concurrency, strict dependency budgeting, and predictable latency.
+* **Byte-Exact Evidence Grounding**: Reasoning outputs grounded in immutable source bytes with auditable execution traces, two-column PDF geometric reconstruction, and morphological role verification.
+* **Three-Plane Formal SMT Verification**: Proving rule consistency (`unsat-core`), resolving composite boolean exceptions, and verifying multi-cycle hardware pipelines via industrial SMT solvers (Microsoft Z3 over `QF_LRA`, `QF_UF`, and `QF_BV`).
+* **Fail-Closed Refusals**: Explicit, typed refusals when evidence is insufficient or contradictory, adhering strictly to the closed-world assumption ($`\mathrm{ZHR} = 1.00`$).
+* **Production Go Engineering**: Clean package architecture, zero-copy `mmap` binary containers, high concurrency, strict dependency budgeting, and predictable latency.
 
 ---
 
-### 📚 Engineering Monographs
+### 📚 Engineering Monographs & Textbooks
 
-#### 1. Architecture of Evidence-Based Expert Systems: From Formal Ontologies to Neuro-Symbolic AI
-*Comprehensive Monograph · 7 parts, 40 chapters, 5 appendices (2026)*
+#### 1. [Architecture of Evidence-Based Expert Systems: From Formal Ontologies to Neuro-Symbolic AI](https://github.com/nick-fedchik/articles/tree/main/Expert_Systems_Architecture)
+*Comprehensive Monograph · 7 parts, 40 chapters (2026)*
 
-A foundational study on overcoming the central crisis of modern AI: the **epistemic breach** between the stochastic plausibility of autoregressive neural networks (LLM/SLM) and the deterministic truth of formal logical proofs. Formulates the paradigm of **Evidence-Grounded Neuro-Symbolic AI (Third-Wave NeSy)** — statistical models act in an advisory capacity (System 1) for hypothesis generation and semantic parsing, while a deterministic symbolic core (System 2) strictly enforces formal invariants, byte-exact grounding, and fail-closed safety envelopes.
+A foundational study on overcoming the central crisis of modern AI: the **epistemic breach** between the stochastic plausibility of autoregressive neural networks (LLM/SLM) and the deterministic truth of formal logical proofs. Formulates the paradigm of **Evidence-Grounded Neuro-Symbolic AI (Third-Wave NeSy)** — statistical models act strictly in an advisory capacity (System 1) under operational hygiene gates (reasoning-effort budgeting, asymmetric `FP16/Q8_0` KV-cache sizing, context-shift prohibition, and behavioral self-tests), while a deterministic symbolic core (System 2) enforces formal invariants, byte-exact grounding, and fail-closed safety envelopes.
 
-* **Evidence-Grounded Invariant (EGI)**: Continuous byte-exact custody `[byte_start, byte_end]`, cryptographic SHA-256 hashes, and W3C PROV-O provenance, guaranteeing zero hallucination ($`\mathrm{ZHR} = 1.00`$) and fail-closed refusal precision ($`\mathrm{FCP} = 100\%`$).
-* **High-Performance Knowledge Packs (`mmap`)**: POSIX `mmap` dual-layer binary storage (canonical evidence bedrock + materialized graph index) for zero-allocation, sub-linear engine startup regardless of ontology volume.
-* **Knowledge Testing Pyramid (KTP)**: 4-tier verification (KUT unit mocks, KIT rule lattices, KVT variational tests) ensuring semantic invariance ($`\mathrm{SIS} \ge 0.98`$) and Lipschitz continuity ($`L_{\mathcal{K}} \le L_{\max}`$) to eliminate relay chattering.
-* **Popperian Falsification & ASPIC+**: Active Compliance Auditor synthesizing counter-examples, conflict resolution under Dung/Walton argumentation frameworks, and runtime Falsification Gates withstanding *Undermining*, *Undercutting*, and *Rebutting* attacks.
-* **Formal Safety Cases (GSN)**: Direct compilation of Engineering Knowledge Graphs (EKG) into Goal Structuring Notation trees for simultaneous functional safety and cybersecurity compliance (ISO 26262 ASIL-D, IEC 61508 SIL-3, DO-178C DAL-A, ISO/SAE 21434).
-* **Hardware Execution (EPU)**: Real-time silicon knowledge processors benchmarked on NVIDIA Jetson AGX Orin (64GB) + dual Xilinx Zynq-7020 FPGAs over Zero-Copy federated arenas, ensuring deterministic sub-microsecond inference.
+* **Evidence-Grounded Invariant (EGI) & Speech-Act Segregation**: Continuous byte-exact custody `[byte_start, byte_end]`, SHA-256 verification, whitespace-valley geometric reconstruction for multi-column PDFs, FST morphosyntactic case-syncretism resolution (`SVO` vs `OVS`), and Searle constitutive enactment segregation, guaranteeing zero hallucination ($`\mathrm{ZHR} = 1.00`$).
+* **High-Performance Knowledge Packs (`mmap`) & Verdict-Blind Routing (`Recall@K`)**: Zero-copy memory-mapped binary containers with CSR concept graphs ($> 1.1 \times 10^6$ concept nodes), verified anaphoric subject rebinding (`COREFERS_TO`), and verdict-blind candidate routing achieving $100\%$ pack recall on positive controls and $94.6\%$ on blind paraphrases ($96.6\%$ in Ukrainian).
+* **Three-Plane Formal SMT Verification (Z3)**: Unified formal verification across `QF_LRA`, `QF_UF`, and `QF_BV` — offline knowledge container consistency auditing with minimal `unsat-core` extraction, runtime resolution of composite boolean exceptions (`unless A and B`), and 24-cycle bounded/inductive hardware RTL verification with non-vacuity witnesses and $100\%$ mutant detection.
+* **Knowledge Testing Pyramid (KTP) & Calibration**: 4-tier verification (KUT unit mocks, KIT rule lattices, KVT variational tests) and two-rule Cohen's $\kappa$ stub-gate calibration ($`\kappa = 0.805 > 0.80`$), ensuring semantic invariance ($`\mathrm{SIS} \ge 0.98`$) and Lipschitz continuity ($`L_{\mathcal{K}} \le L_{\max}`$).
+* **Popperian Falsification & ASPIC+**: Active Compliance Auditor synthesizing counter-examples, cross-standard priority arbitration (`supersedes` / `overrides`) over canonical claim scopes, and runtime Falsification Gates withstanding *Undermining*, *Undercutting*, and *Rebutting* attacks.
+* **Formal Safety Cases (GSN) & Hardware Execution (EPU)**: Direct compilation of Engineering Knowledge Graphs into Goal Structuring Notation trees (ISO 26262 ASIL-D, IEC 61508 SIL-3, DO-178C DAL-A, ISO/SAE 21434) and real-time silicon knowledge processors benchmarked on NVIDIA Jetson AGX Orin (64GB) + Xilinx Zynq-7020 FPGAs.
 
 *Structure: Part I (Epistemic Foundations) · Part II (Mathematical Models) · Part III (Knowledge Extraction & NLP) · Part IV (Core Architecture & Inference) · Part V (Verification & Safety Cases) · Part VI (Neuro-Symbolic Frontiers) · Part VII (Distributed Cybernetic Runtime).*
 
 ---
 
-#### 2. Managing Complex Engineering Projects and Programmes
+#### 2. [Expert Systems: Software Engineering, Formal Reasoning, and Neuro-Symbolic Practice](https://github.com/nick-fedchik/articles/tree/main/Expert_Systems)
+*Three-Volume University & Practitioner Textbook · 3 volumes, 30 chapters, executable Python 3.14 verification listings (2026)*
+
+A hands-on engineering textbook bridging formal logic, applied mathematics, and production software implementation for computer science students and systems engineers:
+
+* **[Volume 1 (Chapters 1–10): Logical Foundations & Classical Inference](https://github.com/nick-fedchik/articles/tree/main/Expert_Systems/Volume-1)** — Belnap four-valued logic, incomplete and conflicting evidence, production rules and decision tables, Rete/treat production networks, forward/backward chaining, truth maintenance systems (JTMS/ATMS), constraint satisfaction, and counterfactual explanations/repairs.
+* **[Volume 2 (Chapters 11–20): Knowledge Engineering, Normative Argumentation & Formal Verification](https://github.com/nick-fedchik/articles/tree/main/Expert_Systems/Volume-2)** — Knowledge acquisition and representation, local language models in knowledge engineering, knowledge graphs and digital thread traceability, deontic logic, constitutive acts, and structured ASPIC+ argumentation, formal SMT verification with minimal `unsat-core` isolation and non-vacuity checks, model-based diagnosis, and temporal prediction.
+* **[Volume 3 (Chapters 21–30): Neuro-Symbolic Systems, Extraction Pipelines & Distributed Execution](https://github.com/nick-fedchik/articles/tree/main/Expert_Systems/Volume-3)** — Isolated neuro-symbolic architectures, zero-shot entity/relation extraction, multi-column PDF layout recovery and Ukrainian `SVO/OVS` morphosyntactic disambiguation, grammar-constrained decoding, hybrid lexical/vector/graph retrieval, verdict-blind `Recall@K` evaluation and verified subject rebinding, controlled execution, hardware acceleration, and distributed expert systems.
+
+---
+
+#### 3. Managing Complex Engineering Projects and Programmes
 *From Work Breakdown Structure to Digital Thread and Evidence-Based Release · 6 parts, 18 chapters, 3 appendices*
 
 Systems engineering guide on hybrid planning for HW/SW co-design, baseline management, digital thread traceability connecting requirements, code, tests, and evidence, event-driven governance, and AI-assisted PMO platforms.
 
 ---
 
-#### 3. The Evolution of Cybersecurity: From the First Modem to Autonomous Systems
+#### 4. The Evolution of Cybersecurity: From the First Modem to Autonomous Systems
 *Popular-Science Monograph · 10 chapters, 2 appendices*
 
 Traces architectural zero trust from 1970s time-sharing systems to telecommunications, ICS/SCADA, connected vehicles, UAV swarms, and space assets.
 
 ---
 
-#### 4. Military Cybernetics of the Early 21st Century
+#### 5. [Military Cybernetics of the Early 21st Century](https://github.com/nick-fedchik/articles/tree/main/MilTech)
 *Control Systems, Cyber-Physical Complexes and Evidence-Based Intelligence · 4 parts, 12 chapters*
 
 Theoretical foundations and modern applications of the Ukrainian cybernetic school (Glushkov tradition), GNSS-denied navigation, autonomous swarm robotics, multi-echelon C2 architectures, and hardware roots of trust (based strictly on open-source research).
