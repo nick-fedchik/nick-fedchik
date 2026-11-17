@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Mykola Fedchyk 👋</h1>
 
 <p align="center">
-  <b>Go Engineer & Systems Architect</b> — Specializing in deterministic reasoning, expert systems, and verifiable engineering pipelines.
+  <b>Computer systems (software/hardware) Engineer & Systems Architect</b> — Specializing in deterministic reasoning, expert systems, and verifiable engineering pipelines.
 </p>
 
 <p align="center">
