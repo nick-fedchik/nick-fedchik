@@ -142,16 +142,20 @@ flowchart LR
 
 ### 🛠️ Featured Open Source & Engineering Projects
 
-* 🔬 **[LogicTracer](https://github.com/nick-fedchik/LogicTracer)** — *Evidence-grade Logic Analyzer for Hardware-in-the-Loop (HIL) & AI Agents (C++20 / Qt 6 / RP2040 / Verilog).*<br/>
-  Native host (`logictracer-cli`, `logictracer-gui`), Model Context Protocol server (`logictracer-mcp`), RP2040 firmware, and in-design FPGA capture core (`lt_capture`) delivering deterministic stimulus-to-reaction timing metrology (`Δs` histograms, nearest-rank percentiles, ±1-sample bounds, and automated CI/HIL pass/fail verdicts).
-* 📚 **[articles](https://github.com/nick-fedchik/articles)** — *Engineering Monographs & University Textbooks on Expert Systems and Military Cybernetics.*<br/>
-  Open repository hosting the 40-chapter monograph *Architecture of Evidence-Based Expert Systems*, the 3-volume university textbook *Expert Systems* (30 chapters with executable verification listings), and *Military Cybernetics of the Early 21st Century* (12 chapters).
-* 🚀 **[codex-fleet](https://github.com/nick-fedchik/codex-fleet)** — *Lightweight distributed worker fleet for local LLM orchestration (Go).*<br/>
-  Orchestrates parallel local Ollama model inference and embeddings across Linux, Windows, and WSL2 hosts with health monitoring, automated failover, SSH checks, and worker warmups.
-* 🧰 **[gltk](https://github.com/nick-fedchik/gltk)** — *GitLab Automation & Administration Toolkit (Go).*<br/>
-  High-performance CLI built on Cobra for GitLab management: runner orchestrations, CI artifact pipelines, user lifecycle management, and security audits.
-* 🛡️ **[aorus-5-fault-watchdog](https://github.com/nick-fedchik/aorus-5-fault-watchdog)** — *Linux Kernel & Hardware Fault Watchdog (C).*<br/>
-  System daemon for detecting, logging, and recovering from low-level NVIDIA GSP firmware and Intel xHCI controller faults on Linux hosts.
+* 🔬 **[LogicTracer](https://github.com/nick-fedchik/LogicTracer)** · C++20, Qt 6, RP2040 · GPL-3.0<br/>
+  A logic analyzer for hardware-in-the-loop testing and CLI/CI workflows. Its desktop app, CLI, and MCP server share captures for human and AI-assisted debugging; measurement reports include sampling uncertainty and explicit pass/fail bounds.
+* 🚀 **[codex-fleet](https://github.com/nick-fedchik/codex-fleet)** · Go · GPL-3.0<br/>
+  A CLI for managing remote workers that run local Ollama models across Linux, Windows, and WSL2. The current SSH-based MVP supports worker registration, availability checks, model warmup, and prompt execution.
+* 🛡️ **[aorus-5-fault-watchdog](https://github.com/nick-fedchik/aorus-5-fault-watchdog)** · C · MIT<br/>
+  An event-driven Linux watchdog for a specific NVIDIA GSP and Intel xHCI fault sequence observed on a Gigabyte AORUS 5 SE4. Findings describe the tested machine, not a confirmed issue across all laptops of this model.
+* 🧰 **[gltk](https://github.com/nick-fedchik/gltk)** · Go · Apache-2.0<br/>
+  A command-line client for managing GitLab issues, merge requests, pipelines, jobs, branches, tags, and users.
+
+**Public R&D repositories (not presented as open source):**
+
+* 🚁 **[drone-do](https://github.com/nick-fedchik/drone-do)** — Research and engineering workspace for indoor drone control, passage sensing, and docking. Proposals and simulations are not evidence of validated hardware or flight capability.
+* ⚙️ **[kuzmin-machine](https://github.com/nick-fedchik/kuzmin-machine)** — Public engineering and research repository; proprietary, not open source.
+* 📚 **[articles](https://github.com/nick-fedchik/articles)** — Books and monographs on expert systems and military cybernetics; see [Engineering Monographs & Textbooks](#-engineering-monographs--textbooks) above.
 
 ---
 
